@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 
-	var card string = "Ace of spades"
+	var card = "Ace of spades"
 	fmt.Println(card)
 
 }

@@ -53,6 +53,10 @@ Defines a package that can be used as a dependency(helper code)
 var <vairable-name> <variable-type> = <value>
 var card string = "Ace of spades"
 ```
+Type can be omitted in Go. GO compiler will infer type based on the value.
+```
+var card = "Ace of spades"
+```
 
 #### Basic types in Go
 
