@@ -33,3 +33,16 @@ go test <file/package name>
 
 
 ## Packages in Go
+#### 1. Executable Package:
+```
+package main
+```
+Defines a package that can be compiled and then *executed*
+###### Must have a func called *'main'*
+
+#### 2. Reusable Package:
+
+```
+package <any userdefined name other than main> 
+```
+Defines a package that can be used as a dependency(helper code)
