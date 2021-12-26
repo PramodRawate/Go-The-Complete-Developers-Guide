@@ -46,3 +46,21 @@ Defines a package that can be compiled and then *executed*
 package <any userdefined name other than main> 
 ```
 Defines a package that can be used as a dependency(helper code)
+
+## Variables/Types in Go
+#### Variable declaration
+```
+var <vairable-name> <variable-type> = <value>
+var card string = "Ace of spades"
+```
+
+#### Basic types in Go
+
+```
+| Type    |    Values      |
+| ------- | -------------- |
+|   bool  | true, false    |
+|  string | "hi", "hello"  |
+|   int   | 0, -1000, 9999 |
+| float64 | 10.1, 0.0009, -100.003|
+```
