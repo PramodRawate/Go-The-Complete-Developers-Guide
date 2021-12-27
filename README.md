@@ -112,3 +112,11 @@ func newCard() string {
 	return "Five of Diamonds"
 }
 ```
+
+## Arrays and slices in Go
+#### 1. Array - Creates an array of fixed size.
+Array variable is *not a pointer* to the first array element, array variable *stands for the whole array*
+
+#### 2. Slice - Creates an array which can grow and shrink.
+Slice consists a pointer to the array.
+###### Both Array and Slice must have elements of same types.

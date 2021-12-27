@@ -5,7 +5,10 @@ import "fmt"
 var deckSize int
 
 func main() {
-	printState()
+	// printState()
+
+	deckSize = 50
+	fmt.Println(deckSize)
 
 	deckSize = 50
 	fmt.Println(deckSize)
