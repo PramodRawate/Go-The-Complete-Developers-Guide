@@ -8,4 +8,7 @@ func main() {
 	card := "Ace of spades"
 	fmt.Println(card)
 
+	var deckSize int
+	deckSize = 52
+	fmt.Println(deckSize)
 }

@@ -64,6 +64,11 @@ card:="Five of Diamonds"
 ```
 ###### This can only be used during new variable initialization and not for reassigning
 
+#### Variable Initialization and then assigning value
+```
+var deckSize int
+deckSize = 52
+```
 
 
 #### Basic types in Go
