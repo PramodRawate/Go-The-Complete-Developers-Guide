@@ -20,6 +20,11 @@ func main() {
 	cards := []string{"Ace of spades", newCard()}
 	cards = append(cards, "Six of Spades")
 	fmt.Println(cards)
+
+	// Looping through slices in Go
+	for i, card := range cards {
+		fmt.Println(i, card)
+	}
 }
 
 func newCard() string {
