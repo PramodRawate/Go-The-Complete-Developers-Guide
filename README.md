@@ -120,3 +120,14 @@ Array variable is *not a pointer* to the first array element, array variable *st
 #### 2. Slice - Creates an array which can grow and shrink.
 Slice consists a pointer to the array.
 ###### Both Array and Slice must have elements of same types.
+
+### Adding new elements to slice
+```
+append(sliceName, <new-element-to-add>)
+```
+Example:
+```
+cards := []string{"Ace of spades", newCard()}
+cards = append(cards, "Six of Spades")
+fmt.Println(cards)
+```
