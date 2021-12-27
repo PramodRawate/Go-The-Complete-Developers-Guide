@@ -69,6 +69,23 @@ card:="Five of Diamonds"
 var deckSize int
 deckSize = 52
 ```
+#### We can initialize a variable outside of a function. We just can't assign a value to it.
+```
+var deckSize int
+
+func main() {
+	deckSize = 50
+	fmt.Println(deckSize)
+}
+```
+Below code using walrus operator(:=) will not work:
+```
+deckSize:= 52
+
+func main() {
+	fmt.Println(deckSize)
+}
+```
 
 
 #### Basic types in Go
