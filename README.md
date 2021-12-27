@@ -98,3 +98,17 @@ func main() {
 |   int   | 0, -1000, 9999 |
 | float64 | 10.1, 0.0009, -100.003|
 ```
+## Functions in Go
+```
+func <function-name>() <return-type-of-func> {
+	// """
+	// function body
+	// """
+}
+```
+Example:-
+```
+func newCard() string {
+	return "Five of Diamonds"
+}
+```
