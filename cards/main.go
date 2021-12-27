@@ -7,12 +7,15 @@ var deckSize int
 func main() {
 	printState()
 
+	deckSize = 50
+	fmt.Println(deckSize)
+
 	// var card = "Ace of spades"
 	card := newCard()
 	fmt.Println(card)
 
-	deckSize = 50
-	fmt.Println(deckSize)
+	cards := []string{"Ace of spades", newCard()}
+	fmt.Println(cards)
 }
 
 func newCard() string {
