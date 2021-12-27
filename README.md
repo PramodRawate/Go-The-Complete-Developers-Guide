@@ -58,6 +58,14 @@ Type can be omitted in Go. GO compiler will infer type based on the value.
 var card = "Ace of spades"
 ```
 
+#### Alternate Variable declaration for above - walrus operator(:=)
+```
+card:="Five of Diamonds"
+```
+###### This can only be used during new variable initialization and not for reassigning
+
+
+
 #### Basic types in Go
 
 ```
