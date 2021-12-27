@@ -5,6 +5,7 @@ import "fmt"
 var deckSize int
 
 func main() {
+	printState()
 
 	// var card = "Ace of spades"
 	card := newCard()
