@@ -131,3 +131,17 @@ cards := []string{"Ace of spades", newCard()}
 cards = append(cards, "Six of Spades")
 fmt.Println(cards)
 ```
+
+### Looping through slices in Go
+```
+cards := []string{"Ace of spades", newCard(), "Six of Spades"}
+for i, card :=  range cards {
+    fmt.Println(i, card)
+}
+```
+Output:
+```
+0 Ace of spades
+1 Five of Diamonds
+2 Six of Spades
+```
