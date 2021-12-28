@@ -17,7 +17,7 @@ func main() {
 	card := newCard()
 	fmt.Println(card)
 
-	cards := []string{"Ace of spades", newCard()}
+	cards := deck{"Ace of spades", newCard()}
 	cards = append(cards, "Six of Spades")
 	fmt.Println(cards)
 

@@ -145,3 +145,19 @@ Output:
 1 Five of Diamonds
 2 Six of Spades
 ```
+## Custom type declaration in Go - Similar to Class in Java/OOP
+```
+type deck []string
+```
+Above creates a custom type or say like class which is of type []string(array of strings).
+This can now be used instead of '[]string' type as below.
+
+Primitive type:
+```
+cards := []string{"Ace of spades", newCard()}
+```
+Customer Type:
+```
+cards := deck{"Ace of spades", newCard()}
+```
+[]string type can be replaced with type 'deck'.
