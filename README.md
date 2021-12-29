@@ -184,3 +184,24 @@ cards.print()
 ```
 
 In terms of Java, consider type *deck* as a class and *print()* as its method.
+
+
+## Using '_'(underscore) for variables not being used.
+```
+cards := deck{"Ace of spades", "Two of Diamonds", "Three of Hearts"}
+for index, card := range d {
+		fmt.Println(card)
+	}
+```
+In above example Go compiler will give error since we are not using index. So we need to use it.
+```
+for index, card := range d {
+    fmt.Println(index,card)
+}
+```
+Hence, to avoid this we can use '_' instead of *index* and can ignore adding it in Println() as below:
+```
+for _, card := range d {
+    fmt.Println(card)
+}
+```
