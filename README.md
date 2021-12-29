@@ -161,3 +161,26 @@ Customer Type:
 cards := deck{"Ace of spades", newCard()}
 ```
 []string type can be replaced with type 'deck'.
+
+## Receiver Functions in Go
+For above custom type we can define a receiver function. Unlike other programming language, receiver functions in Go have parameter list(called as *Receiver*) before the function name as below:
+```
+deck.go
+-------
+type deck []string
+
+func (d deck) print() {
+	for index, card := range d {
+		fmt.Println(index, card)
+	}
+}
+```
+Any variable of type *deck*  now gets access to the *print* method.
+```
+main.go
+-------
+cards := deck{"Ace of spades", newCard()}
+cards.print()
+```
+
+In terms of Java, consider type *deck* as a class and *print()* as its method.
