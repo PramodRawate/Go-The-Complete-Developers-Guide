@@ -246,3 +246,32 @@ cards := newDec()
 cards.saveToFile("main_cards")
 ```
 This will save the decks to a file called *main_cards*.
+
+## Reading data(deck) from a file in Go
+*ReadFile()* is one such function used to save []byte to a file.
+```
+Syntax
+-------
+func ReadFile(filename string) ([]byte, error)
+```
+```
+deck.go
+-------
+func (d deck) newDeckFromFile(fileName string) deck {
+	fileData, err := ioutil.ReadFile(fileName)
+	if err != nil {
+		fmt.Println("Error: ", err)
+		os.Exit(1)
+	}
+
+	s := deck(strings.Split(string(fileData), ","))
+	return s
+}
+```
+```
+main.go
+-------
+cardsFromFile := cards.newDeckFromFile("./main_cards")
+cardsFromFile.print()
+```
+This will read the file(*main_cards*) and return a deck.
