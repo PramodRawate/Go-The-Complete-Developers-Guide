@@ -205,3 +205,22 @@ for _, card := range d {
     fmt.Println(card)
 }
 ```
+
+## Returning multiple values in Go & Slice range syntax(slicename[start,end])
+func <function-name>(<parameter1>, ...<parameterN>) (return1, return2) {
+    return return1 return 2;
+}
+```
+deck.go
+--------
+func deal(d deck, handSize int) (deck, deck) {
+	return d[:3], d[3:]
+}
+```
+
+```
+main.go
+--------
+cards := newDec()
+hand, remainingCards := deal(cards, 3)
+```
