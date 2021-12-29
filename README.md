@@ -224,3 +224,25 @@ main.go
 cards := newDec()
 hand, remainingCards := deal(cards, 3)
 ```
+
+## Saving data(deck) to a file in Go
+Package *ioutil* implements some I/O utility functions.
+
+*WriteFile()* is one such function used to save []byte to a file.
+```
+func WriteFile(filename string, data []byte, perm fs.FileMode) error
+```
+```
+deck.go
+-------
+func (d deck) saveToFile(filename string) error {
+	return ioutil.WriteFile(filename, []byte(d.toString()), 0666)
+}
+```
+```
+main.go
+-------
+cards := newDec()
+cards.saveToFile("main_cards")
+```
+This will save the decks to a file called *main_cards*.
